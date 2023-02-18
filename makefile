@@ -13,7 +13,7 @@ migrateup:
 migratedown:
 	migrate -path db/migration -database "postgres://root:secret@localhost:5432/gobank?sslmode=disable" -verbose down
 
-# sqlc:
-# 	docker run name
+sqlc:
+	C:\Users\USER\Downloads\sqlc_1.14.0_windows_amd64\sqlc.exe generate
 
-.PHONY: postgres createdb dropdb migrateup migratedown
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc
